@@ -1,0 +1,45 @@
+.contentSignin {
+  background-color: #16a085;
+  height: 400px;
+  width: 600px;
+}
+
+.inputLogin {
+  width: 80%;
+  border-radius: 10px;
+  height: 30px;
+  padding-left: 20px;
+}
+#login {
+  width: 75%;
+  border: 2px solid green;
+  scroll-margin-inline: 60px;
+  text-align: center;
+  border-radius: 10px;
+  height: 30px;
+  margin-left: 70px;
+}
+.main {
+  background-color: #38ada9;
+  height: 360px;
+  width: 700px;
+  position: absolute;
+  margin: auto;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  border-radius: 10px;
+
+  color: #6d214f;
+}
+.wrapperLogin {
+  background-color: #353b48;
+  height: 100vh;
+}
+@media (min-width: 437px) and (max-width: 1200px) {
+  .main {
+    width: 400px;
+    bottom: 370px;
+  }
+}

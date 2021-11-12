@@ -1,0 +1,177 @@
+input#file {
+  display: inline-block;
+  width: 100%;
+  padding: 120px 0 0 0;
+  height: 100px;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* background: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698394-icon-130-cloud-upload-512.png') center center no-repeat #e4e4e4;*/
+  border-radius: 20px;
+  background-size: 100%;
+}
+.box {
+  display: flex;
+  background-color: #38ada9;
+  height: 350px;
+  flex-basis: 50%;
+  flex-direction: row;
+  /*will show last item in new line if space is not available*/
+}
+
+.col1 {
+  flex: 1;
+}
+.col2 {
+  flex: 1;
+}
+.pic {
+  position: absolute;
+  top: 200px;
+  right: 200px;
+  width: 600px;
+}
+.wrapperSignup {
+  background-color: #353b48;
+  height: 100vh;
+}
+.mainSignup {
+  background-color: #38ada9;
+  height: 500px;
+  width: 900px;
+  position: absolute;
+  margin: auto;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  border-radius: 10px;
+
+  color: #6d214f;
+}
+.signupTitle {
+  margin-top: 20px;
+}
+.col1Content {
+  position: relative;
+  top: 20px;
+  left: 80px;
+}
+.ImgUpload {
+  background-color: inherit;
+  width: 80%;
+  height: 200px;
+  position: relative;
+  left: 60px;
+  top: 20px;
+  text-align: center;
+  border: 2px solid green;
+}
+.submitDiv {
+  border: 2px solid green;
+  margin-left: 40px;
+  text-align: center;
+  border-radius: 10px;
+  height: 30px;
+}
+.inputSignup {
+  width: 80%;
+  border-radius: 10px;
+  height: 30px;
+}
+.submitBtn {
+  background-color: inherit;
+  color: #6d214f;
+  line-height: 30px;
+  border: none;
+}
+
+@media (min-width: 438px) and (max-width: 1200px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+  .box {
+    flex-direction: column;
+    flex-basis: 100%;
+    height: 750px;
+  }
+  .inputSignup {
+    width: 198px;
+  }
+  .mainSignup {
+    top: -222px;
+    width: 419px;
+    overflow-x: hidden;
+  }
+
+  /* .wrapperSignup {
+    width: 437px;
+    height: auto;
+  }*/
+  .col1Content {
+    left: 22px;
+  }
+  .ImgUpload {
+    left: 24px;
+  }
+  .ImgUpload img {
+    top: 19px;
+    right: 85px;
+    position: absolute;
+  }
+  .submitDiv {
+    margin-left: 23px;
+    width: 382px;
+  }
+  .signupTitle {
+    margin-top: 20px;
+  }
+  #target {
+    display: block;
+  }
+}
+@media (max-width: 437px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+  .box {
+    flex-direction: column;
+    flex-basis: 100%;
+    height: 750px;
+  }
+  .wrapperSignup {
+    width: 419px;
+  }
+  .inputSignup {
+    width: 198px;
+  }
+  .mainSignup {
+    top: -222px;
+    width: 419px;
+    overflow-x: hidden;
+  }
+
+  /* .wrapperSignup {
+    width: 437px;
+    height: auto;
+  }*/
+  .col1Content {
+    left: 22px;
+  }
+  .ImgUpload {
+    left: 24px;
+  }
+  .submitDiv {
+    margin-left: 23px;
+    width: 382px;
+  }
+  .signupTitle {
+    margin-top: 20px;
+  }
+  #target {
+    display: block;
+  }
+}

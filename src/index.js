@@ -1,14 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { Grids } from "./Grids";
+import "font-awesome/css/font-awesome.min.css";
+import { QueryClient, QueryClientProvider } from "react-query";
+//import { Home2 } from "./Home2";
+const client = new QueryClient();
 
 ReactDOM.render(
-  <React.StrictMode>
+  <QueryClientProvider client={client}>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </QueryClientProvider>,
+
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
